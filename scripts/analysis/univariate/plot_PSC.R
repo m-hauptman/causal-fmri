@@ -1,3 +1,7 @@
+# plot_PSC.py
+# create plots of PSC data
+# written by MH
+
 library(ggplot2)
 library(tidyr)
 library(dplyr)
@@ -11,7 +15,7 @@ library(stringr)
 #### plot PSC bar graphs and timecourses ####
 
 # language network: main exp conditions extracted from language vertices
-wd = "/Users/miriamhauptman/Documents/Projects/Illness/MRI exp/univariate/n=20_noLOO/"
+wd = ""
 setwd(wd)
 
 subs <- c("IRNX_05","IRNX_06","IRNX_07","IRNX_08","IRNX_10","IRNX_11","IRNX_12",
@@ -113,7 +117,7 @@ for (vnum in vnums) {
 }
 
 # logic network: main exp conditions extracted from logic vertices
-wd = "/Users/miriamhauptman/Documents/Projects/Illness/MRI exp/univariate/n=20_noLOO/"
+wd = ""
 setwd(wd)
 
 subs <- c("IRNX_05","IRNX_06","IRNX_07","IRNX_08","IRNX_10","IRNX_11","IRNX_12",
@@ -215,7 +219,7 @@ for (vnum in vnums) {
 }
 
 # PC - leave one run out: main exp conditions extracted from illness vertices
-wd = "/Users/miriamhauptman/Documents/Projects/Illness/MRI exp/univariate/n=20_LOO/"
+wd = ""
 setwd(wd)
 
 subs <- c("IRNX_05","IRNX_06","IRNX_07","IRNX_08","IRNX_10","IRNX_11","IRNX_12",
@@ -316,7 +320,7 @@ for (vnum in vnums) {
 }
 
 # PC/TPJ: main exp conditions extracted from social vertices
-wd = "/Users/miriamhauptman/Documents/Projects/Illness/MRI exp/univariate/n=20_noLOO/"
+wd = ""
 setwd(wd)
 
 subs <- c("IRNX_05","IRNX_06","IRNX_07","IRNX_08","IRNX_10","IRNX_11","IRNX_12",
@@ -418,7 +422,7 @@ for (vnum in vnums) {
 
 # PC/TPJ: socphys conditions extracted from illness vertices
 
-wd = "/Users/miriamhauptman/Documents/Projects/Illness/MRI exp/univariate/n=20_noLOO/"
+wd = ""
 setwd(wd)
 
 # social: all
