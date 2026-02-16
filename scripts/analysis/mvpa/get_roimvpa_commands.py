@@ -1,4 +1,6 @@
-# written by Miriam, 2.2023
+# get_roimvpa_commands.py
+# prepare commands for ROI MVPA
+# written by MH
 
 import os
 import numpy as np
@@ -6,7 +8,6 @@ import numpy as np
 os.chdir('/export/bedny/Projects/IRNX/')
 
 # job for roi mvpa
-
 subs = ["IRNX_05","IRNX_06","IRNX_07","IRNX_08","IRNX_10","IRNX_11",
           "IRNX_12","IRNX_13","IRNX_14","IRNX_15","IRNX_16","IRNX_17",
           "IRNX_18","IRNX_19","IRNX_20","IRNX_22","IRNX_23","IRNX_24",
@@ -35,11 +36,9 @@ with open(filename, 'w') as f:
 							the_cmd = "python Scripts/mvpa/1map_per_run_nonnorm/sj_roi_mvpa_%s.py %s %s %s %s %d %s\n"%(test,sub,hemi,roi,contrast,v_num,test)
 						
 							f.write(the_cmd)
-
 f.close()
 
-
-# lang/log
+# job for lang/log
 hemis = ["lh"]
 tests = ["bioncm"]
 rois =["Lang","Logic"]
